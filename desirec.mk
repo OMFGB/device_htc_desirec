@@ -173,3 +173,7 @@ $(call inherit-product, device/htc/common/common.mk)
 
 $(call inherit-product, build/target/product/full.mk)
 
+
+PRODUCT_NAME := full_desirec
+PRODUCT_DEVICE := desirec
+
