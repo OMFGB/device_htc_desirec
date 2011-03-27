@@ -46,7 +46,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxVidEnc \
     libmm-omxcore \
-    desirec-keypad.kcm
 
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
@@ -65,11 +64,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/desirec/init.desirec.rc:root/init.desirec.rc \
     device/htc/desirec/ueventd.desirec.rc:root/ueventd.desirec.rc
-
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    device/htc/desirec/desirec-keypad.kl:system/usr/keylayout/desirec-keypad.kl \
-    device/htc/desirec/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl
 
 PRODUCT_PROPERTY_OVERRIDES := \
     keyguard.no_require_sim=true \

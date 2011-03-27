@@ -16,8 +16,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := eng
-LOCAL_SRC_FILES := desirec-keypad.kcm
-include $(BUILD_KEY_CHAR_MAP)
         
 # the system properties for each device, loaded by init
 file := $(TARGET_OUT)/build.desirec.prop
