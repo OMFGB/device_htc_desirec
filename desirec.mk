@@ -16,7 +16,7 @@
 
 DEVICE_PACKAGE_OVERLAYS := device/htc/desirec/overlay
 
-# Passion uses high-density artwork where available
+# Eris(DesireC) uses medium-density artwork where available
 PRODUCT_LOCALES += mdpi
 
 # Publish that we support the live wallpaper feature.
@@ -45,8 +45,7 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     libOmxCore \
     libOmxVidEnc \
-    libmm-omxcore \
-    desirec-keypad.kcm
+    libmm-omxcore 
 
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
@@ -66,10 +65,7 @@ PRODUCT_COPY_FILES += \
     device/htc/desirec/init.desirec.rc:root/init.desirec.rc \
     device/htc/desirec/ueventd.desirec.rc:root/ueventd.desirec.rc
 
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    device/htc/desirec/desirec-keypad.kl:system/usr/keylayout/desirec-keypad.kl \
-    device/htc/desirec/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl
+ 
 
 PRODUCT_PROPERTY_OVERRIDES := \
     keyguard.no_require_sim=true \
@@ -154,6 +150,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
