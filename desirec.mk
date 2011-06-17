@@ -46,7 +46,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxVidEnc \
     libmm-omxcore \
-    desirec-keypad.kcm
 
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
